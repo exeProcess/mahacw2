@@ -1,0 +1,87 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#title{
+    text-align: center;
+    
+}
+.products_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+.product_card {
+	box-shadow: 1px 0px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 320px;
+	margin: 7px;
+	text-align: center;
+	flex: 0 1 calc(25% - 1em);
+    color: black;
+    height: 500px;
+    padding: 5px;
+}
+
+.collection-sort{
+    float: left;
+}
+
+.product_card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+.product_card button:hover {
+	opacity: 0.7;
+}
+.product-image{
+    height: 240px;
+    width: 350px;
+}
+#checkoutBtn{
+    border: none;
+    border-radius: 200px;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+}
+#checkoutbutton:hover {
+	opacity: 0.7;
+}
+.sortBtn{
+  background-color: black; 
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.sortBtn:hover{
+	background-color: black;
+}
+.submitbtn{
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+.submitBtn:hover{
+	background-color: black;
+}
