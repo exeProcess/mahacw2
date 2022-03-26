@@ -218,7 +218,7 @@
         },
 
         postOrder: function (product) {
-            fetch('http://localhost:3000/collection/orders', {
+            fetch('https://webcw2individual.herokuapp.com/collection/orders', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -239,7 +239,7 @@
                 if (element.availableInventory > 0) {
 
                     console.log("I found it More than 0");
-                    fetch(`http://localhost:3000/collection/products/${element._id}`, {
+                    fetch(`https://webcw2individual.herokuapp.com/collection/products/${element._id}`, {
                         method: 'PUT',
                         headers: {
                             'Content-Type': 'application/json',
@@ -254,7 +254,7 @@
 
                 } else {
                     console.log("I found it less than 0");
-                    fetch(`http://localhost:3000/collection/products/${element._id}`, {
+                    fetch(`https://webcw2individual.herokuapp.com/collection/products/${element._id}`, {
                         method: 'PUT',
                         headers: {
                             'Content-Type': 'application/json',
@@ -458,7 +458,7 @@
 
     created: function () {
 
-        fetch('http://localhost:3000/collection/products').then(
+        fetch('https://webcw2individual.herokuapp.com/collection/products').then(
             function (response) {
                 response.json().then(
                     function (json) {
